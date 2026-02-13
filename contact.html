@@ -13,16 +13,17 @@
 <a href="services.html">Services</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="contact.html">Contact</a>
+<span class="toggle" onclick="toggleTheme()">Theme</span>
 </nav>
 
 <div class="container">
 <h2 class="section-title">Contact</h2>
 
 <div class="card">
-<form>
-<input placeholder="Your Name">
-<input placeholder="Email">
-<textarea rows="5" placeholder="Message"></textarea>
+<form action="https://formsubmit.co/your@email.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" rows="5" placeholder="Message" required></textarea>
 <button class="btn">Send Message</button>
 </form>
 
@@ -30,10 +31,10 @@
 Email: your@email.com<br>
 WhatsApp: +8801XXXXXXXXX
 </p>
-
 </div>
 </div>
 
 <footer>© 2026 Mr Khandabasi Design</footer>
+<script src="script.js"></script>
 </body>
 </html>
